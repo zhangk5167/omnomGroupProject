@@ -139,7 +139,7 @@ public class LightBike1 extends LightBike
 		else{
 			x=getX();
 		}
-		
+		window.drawRect(x, getY(), w, h);
    	window.drawImage(image,x,getY(),w,h,null);
 	}
 

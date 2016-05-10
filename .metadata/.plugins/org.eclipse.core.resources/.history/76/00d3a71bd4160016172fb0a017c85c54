@@ -51,7 +51,6 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
    {
 	   paint(window);
 	   ship.draw(window);
-	   
 	   //for(int a = 0; a<list1.size(); a++){
 		//   list1.get(a).draw(window);
 	   //}
@@ -64,13 +63,9 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 		
 		//take a snap shop of the current screen and same it as an image
 		//that is the exact same width and height as the current screen
-		
 		if(back==null)
 		   back = (BufferedImage)(createImage(getWidth(),getHeight()));
-		
-		//Color blueish = new Color(53,205,236);
-		//window.setColor(blueish);
-		//window.drawRect(ship.getX(), ship.getY(), 2, 2);
+
 		//create a graphics reference to the back ground image
 		//we will draw all changes on the background image
 		
@@ -80,59 +75,54 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 		graphToBack.setColor(Color.BLUE);
 		graphToBack.drawString("StarFighter ", 15, 30 );
 		
-		
-		Trail1 path1 = new Trail1(ship.getX()+80,ship.getY()+12);
-		path1.draw(window);
+		//Trail1 path1 = new Trail1(ship.getX()+40,ship.getY()+12);
+		//path1.draw(window);
 		//list1.add(path1);
-		
+		Color blueish = new Color(53,205,236);
+		window.setColor(blueish);
+		window.drawRect(ship.getX(), ship.getY(), 3, 3);
 		
 		
 		if(ship.getDirection().equals("LEFT")){
-			if(ship.getX()<-80+ship.getSpeed()){
-				window.setColor(Color.BLACK);
-				window.fillRect(ship.getX(),ship.getY(),80,25);
+			if(ship.getX()<0+ship.getSpeed()){
+
 				ship.setX(1860);
+				
+				
 			}
 			else{
-				window.setColor(Color.BLACK);
-				window.fillRect(ship.getX(),ship.getY(),80,25);
+
 				ship.move();
 			}
 		}
 		if(ship.getDirection().equals("RIGHT")){
 			if(ship.getX()>1860-ship.getSpeed()){
-				window.setColor(Color.BLACK);
-				window.fillRect(ship.getX(),ship.getY(),80,25);
+
 				ship.setX(0);
 			}
 			else{
-				window.setColor(Color.BLACK);
-				window.fillRect(ship.getX(),ship.getY(),80,25);
+
 			ship.move();
 			}
 		}
 		if(ship.getDirection().equals("UP")){
 			if(ship.getY()<0+ship.getSpeed()){
-				window.setColor(Color.BLACK);
-				window.fillRect(ship.getX()+25,ship.getY(),25,80);
+
 				ship.setY(940);
 			}
 			else{
-				window.setColor(Color.BLACK);
-				window.fillRect(ship.getX()+25,ship.getY(),25,80);
+
 			ship.move();
 			}
 		}
 		if(ship.getDirection().equals("DOWN")){
 			if(ship.getY()>940-ship.getSpeed()){
-				window.setColor(Color.BLACK);
-				window.fillRect(ship.getX()+25,ship.getY(),25,80);
+			
 				ship.setY(0);
 			}
 			else{
-				window.setColor(Color.BLACK);
-				window.fillRect(ship.getX()+25,ship.getY(),25,80);
-				ship.move();
+
+			ship.move();
 			}
 		}
 		

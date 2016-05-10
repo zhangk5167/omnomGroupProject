@@ -80,15 +80,14 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 		graphToBack.setColor(Color.BLUE);
 		graphToBack.drawString("StarFighter ", 15, 30 );
 		
-		
-		Trail1 path1 = new Trail1(ship.getX()+80,ship.getY()+12);
+		Trail1 path1 = new Trail1(ship.getX(),ship.getY());
 		path1.draw(window);
 		//list1.add(path1);
 		
 		
 		
 		if(ship.getDirection().equals("LEFT")){
-			if(ship.getX()<-80+ship.getSpeed()){
+			if(ship.getX()<0+ship.getSpeed()){
 				window.setColor(Color.BLACK);
 				window.fillRect(ship.getX(),ship.getY(),80,25);
 				ship.setX(1860);

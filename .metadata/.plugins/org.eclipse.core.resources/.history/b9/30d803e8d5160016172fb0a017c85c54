@@ -132,13 +132,13 @@ public class LightBike1 extends LightBike
 
 	public void draw( Graphics window )
 	{
-		int x;
-		if(dir.equals("UP")||dir.equals("DOWN")){
-			x = getX()+25;
-		}
-		else{
+		//int x;
+		//if(dir.equals("UP")||dir.equals("DOWN")){
+		//	x = getX()+25;
+		//}
+		//else{
 			x=getX();
-		}
+		//}
 		
    	window.drawImage(image,x,getY(),w,h,null);
 	}
