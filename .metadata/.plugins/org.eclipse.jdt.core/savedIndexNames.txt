@@ -16,5 +16,8 @@ INDEX VERSION 1.127+H:\GitHub\omnomGroupProject\.metadata\.plugins\org.eclipse.j
 3020013953.index
 2414241960.index
 1729398355.index
+<<<<<<< HEAD
 1266771019.index
+=======
+>>>>>>> origin/master
 3912384510.index
