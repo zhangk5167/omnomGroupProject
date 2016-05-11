@@ -508,14 +508,31 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+<<<<<<< HEAD
+!SESSION 2016-05-08 22:48:04.763 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_91
+=======
 !SESSION 2016-05-09 09:49:36.398 -----------------------------------------------
 eclipse.buildId=4.4.2.M20150204-1700
 java.version=1.8.0_51
+>>>>>>> 8c461e9d71e8db2d8f7c06260a06cbbc2f6431fe
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
+<<<<<<< HEAD
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-08 22:49:02.544
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\daniel12'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-05-10 18:53:04.342 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_91
+=======
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2016-05-09 09:49:54.663
 !MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon' from bundle '353'
 !STACK 0
@@ -1020,11 +1037,20 @@ org.eclipse.swt.SWTException: Widget is disposed
 !SESSION 2016-05-10 09:40:08.161 -----------------------------------------------
 eclipse.buildId=4.4.2.M20150204-1700
 java.version=1.8.0_51
+>>>>>>> 8c461e9d71e8db2d8f7c06260a06cbbc2f6431fe
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
+<<<<<<< HEAD
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-10 18:53:49.109
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\daniel12'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+=======
 !ENTRY org.eclipse.e4.ui.workbench 4 0 2016-05-10 09:40:29.878
 !MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon' from bundle '353'
 !STACK 0
@@ -1169,6 +1195,7 @@ EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 =======
 >>>>>>> origin/master
+<<<<<<< HEAD
 !SESSION 2016-05-10 10:41:08.863 -----------------------------------------------
 eclipse.buildId=4.5.1.M20150904-0015
 java.version=1.7.0_79
@@ -1274,3 +1301,6 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+=======
+>>>>>>> 8c461e9d71e8db2d8f7c06260a06cbbc2f6431fe
+>>>>>>> origin/master

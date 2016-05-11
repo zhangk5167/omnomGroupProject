@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dirs>
+<<<<<<< HEAD
 <entry loc="C:\Program Files (x86)\Java\jre1.8.0_45" stamp="1434490465984"/>
 <entry loc="C:\Program Files\Java\jre7" stamp="1454467232717"/>
+=======
+<entry loc="C:\Program Files\Java\jre7" stamp="1454467232717"/>
+<<<<<<< HEAD
+<entry loc="C:\Program Files\Java\jre1.8.0_91" stamp="1462769379052"/>
+<entry loc="C:\Program Files (x86)\Java\jre1.8.0_45" stamp="1429205425838"/>
+=======
+<entry loc="C:\Program Files (x86)\Java\jre1.8.0_45" stamp="1434490465984"/>
+>>>>>>> 8c461e9d71e8db2d8f7c06260a06cbbc2f6431fe
+>>>>>>> origin/master
 <entry loc="C:\Program Files\Java\jre1.8.0_51" stamp="1438355896804"/>
 </dirs>

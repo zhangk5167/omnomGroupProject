@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INDEX VERSION 1.127+C:\Users\Kevin\Desktop\omnomGroupProject\.metadata\.plugins\org.eclipse.jdt.core
 3065916431.index
 4155206848.index
@@ -15,3 +16,48 @@ INDEX VERSION 1.127+C:\Users\Kevin\Desktop\omnomGroupProject\.metadata\.plugins\
 573543369.index
 305854171.index
 30765161.index
+=======
+<<<<<<< HEAD
+INDEX VERSION 1.127+C:\Users\daniel12\Documents\GitHub\omnomGroupProject\.metadata\.plugins\org.eclipse.jdt.core
+4236009997.index
+509712851.index
+430205200.index
+3764404749.index
+1266771019.index
+1670528678.index
+3678980623.index
+1651349548.index
+1484076330.index
+3876561862.index
+2945162093.index
+900771366.index
+4142306923.index
+3930511455.index
+2261558828.index
+47423239.index
+83085761.index
+1948745554.index
+1507339265.index
+=======
+INDEX VERSION 1.127+H:\GitHub\omnomGroupProject\.metadata\.plugins\org.eclipse.jdt.core
+2456716526.index
+2658843718.index
+3482790767.index
+3664481068.index
+418878299.index
+3353549174.index
+274947791.index
+1440433668.index
+2875811589.index
+36582396.index
+582844924.index
+3538529481.index
+1956581756.index
+689350060.index
+3020013953.index
+2414241960.index
+1729398355.index
+1266771019.index
+3912384510.index
+>>>>>>> 8c461e9d71e8db2d8f7c06260a06cbbc2f6431fe
+>>>>>>> origin/master

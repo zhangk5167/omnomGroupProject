@@ -1,2 +1,10 @@
+<<<<<<< HEAD
 completion_tips_seen=org.eclipse.recommenders.completion.rcp.tips.discovery\:org.eclipse.recommenders.subwords.rcp.tips.enableSubwords\:org.eclipse.recommenders.completion.rcp.tips.types
+=======
+<<<<<<< HEAD
+completion_tips_seen=org.eclipse.recommenders.completion.rcp.tips.types
+=======
+completion_tips_seen=org.eclipse.recommenders.completion.rcp.tips.discovery\:org.eclipse.recommenders.subwords.rcp.tips.enableSubwords
+>>>>>>> 8c461e9d71e8db2d8f7c06260a06cbbc2f6431fe
+>>>>>>> origin/master
 eclipse.preferences.version=1
