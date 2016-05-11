@@ -94,72 +94,25 @@ public class LightBike1 extends LightBike
 	
 	public void turn(String direction){
 		if(direction.equals("LEFT")){
-			  //
-			  if ("UP".equals(dir)) {
-				  int x1 = getX();
-				  int y1 = getY();
-				  setX(getX() - 80 + 25/2);
-				  setY(getY() + 80 - 25/2);
-				  
-				  int x2 = getX();
-				  int y2 = getY();
-				  System.out.println("after x=" + getX() + " y=" + getY());
-			  } else if("DOWN".equals(dir)) {
-				  setX(getX() - 80 + 25/2);
-				  setY(getY() - 25/2);
-			  } else if("RIGHT".equals(dir)) {
-				  setX(getX() - 80);
-			  }
-			  //
-			  
+
 		      w = 80;
 		      h = 25;
 		      dir = "LEFT";
 			}
 			if(direction.equals("RIGHT")){
-				  //
-				  if ("UP".equals(dir)) {
-					  setX(getX() + 25/2);
-					  setY(getY() + 80 - 25/2);
-				  } else if("DOWN".equals(dir)) {
-					  setX(getX() + 25/2);
-					  setY(getY() - 25/2);
-				  } else if("LEFT".equals(dir)) {
-					  setX(getX() + 80);
-				  }
-				  //
+			
 			      w = 80;
 			      h = 25;
 			      dir = "RIGHT";
 			}
 			if(direction.equals("UP")){
-				  //
-				  if ("DOWN".equals(dir)) {
-					  setY(getY() - 80);
-				  } else if("RIGHT".equals(dir)) {
-					  setX(getX() - 25/2);
-					  setY(getY() - 80 + 25/2);
-				  } else if("LEFT".equals(dir)) {
-					  setX(getX() + 80 - 25/2);
-					  setY(getY() - 80 + 25/2);
-				  }
-				  //
+			     
 			      w = 25;
 			      h = 80;
 			      dir = "UP";
 			}
 			if(direction.equals("DOWN")){
-				  //
-				  if ("UP".equals(dir)) {
-					  setY(getY() + 80);
-				  } else if("RIGHT".equals(dir)) {
-					  setX(getX() - 25/2);
-					  setY(getY() + 25/2);
-				  } else if("LEFT".equals(dir)) {
-					  setX(getX() + 80 - 25/2);
-					  setY(getY() + 25/2);
-				  }
-				  //
+
 			      w = 25;
 			      h = 80;
 			      dir = "DOWN";
@@ -187,6 +140,7 @@ public class LightBike1 extends LightBike
 		else{
 			x=getX();
 		}
+		x=getX();
 		
    	window.drawImage(image,x,getY(),w,h,null);
 	}

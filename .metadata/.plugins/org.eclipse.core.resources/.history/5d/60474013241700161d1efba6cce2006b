@@ -96,13 +96,9 @@ public class LightBike1 extends LightBike
 		if(direction.equals("LEFT")){
 			  //
 			  if ("UP".equals(dir)) {
-				  int x1 = getX();
-				  int y1 = getY();
+				  System.out.println("before x=" + getX() + " y=" + getY());
 				  setX(getX() - 80 + 25/2);
 				  setY(getY() + 80 - 25/2);
-				  
-				  int x2 = getX();
-				  int y2 = getY();
 				  System.out.println("after x=" + getX() + " y=" + getY());
 			  } else if("DOWN".equals(dir)) {
 				  setX(getX() - 80 + 25/2);
