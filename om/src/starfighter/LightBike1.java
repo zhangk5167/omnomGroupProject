@@ -128,6 +128,7 @@ public class LightBike1 extends LightBike
 	{
 	   return speed;
 	}
+<<<<<<< HEAD
 	public int getPicX(){
 		int x;
 		if(dir.equals("UP")){
@@ -162,11 +163,14 @@ public class LightBike1 extends LightBike
 		y+=12;
 		return y;
 	}
+=======
+>>>>>>> 8c461e9d71e8db2d8f7c06260a06cbbc2f6431fe
 	
 
 	public void draw( Graphics window )
 	{
 		int x;
+<<<<<<< HEAD
 		int y;
 		if(dir.equals("UP")){
 			x = getX()+68;
@@ -186,6 +190,16 @@ public class LightBike1 extends LightBike
 		}
 		
    	window.drawImage(image,x,y,w,h,null);
+=======
+		if(dir.equals("UP")||dir.equals("DOWN")){
+			x = getX()+25;
+		}
+		else{
+			x=getX();
+		}
+		
+   	window.drawImage(image,x,getY(),w,h,null);
+>>>>>>> 8c461e9d71e8db2d8f7c06260a06cbbc2f6431fe
 	}
 
 	public String toString()

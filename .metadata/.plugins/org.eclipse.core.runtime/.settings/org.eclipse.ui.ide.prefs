@@ -1,7 +1,11 @@
 EXIT_PROMPT_ON_CLOSE_LAST_WINDOW=false
 IMPORT_FILES_AND_FOLDERS_RELATIVE=true
-IMPORT_FILES_AND_FOLDERS_TYPE=23,1
+IMPORT_FILES_AND_FOLDERS_TYPE=23,1\:7,1
 eclipse.preferences.version=1
+<<<<<<< HEAD
 platformState=1462772886386
+=======
+platformState=1448901977426
+>>>>>>> 8c461e9d71e8db2d8f7c06260a06cbbc2f6431fe
 quickStart=false
 tipsAndTricks=true

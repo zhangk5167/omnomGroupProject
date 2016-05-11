@@ -22,9 +22,20 @@ import java.util.concurrent.TimeUnit;
 public class OuterSpace extends Canvas implements KeyListener, Runnable
 {
 	private LightBike1 ship;
+<<<<<<< HEAD
 	private LightBike2 ship2;
 	
 
+=======
+	
+	private Nothing shot;
+	private ArrayList<Trail1> list1 = new ArrayList<Trail1>();
+	
+
+	/*
+	private ArrayList<Ammo> shots;
+	*/
+>>>>>>> 8c461e9d71e8db2d8f7c06260a06cbbc2f6431fe
 
 	private boolean[] keys;
 	private BufferedImage back;
@@ -33,11 +44,17 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 	{
 		setBackground(Color.black);
 
+<<<<<<< HEAD
 		keys = new boolean[8];
 
 		ship = new LightBike1(1500,100,2);
 		ship2 = new LightBike2(220,820,2);
 
+=======
+		keys = new boolean[5];
+
+		ship = new LightBike1(370,450,2);
+>>>>>>> 8c461e9d71e8db2d8f7c06260a06cbbc2f6431fe
 
 		this.addKeyListener(this);
 		new Thread(this).start();
@@ -48,7 +65,10 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
    {
 	   paint(window);
 	   ship.draw(window);
+<<<<<<< HEAD
 	   ship2.draw(window);
+=======
+>>>>>>> 8c461e9d71e8db2d8f7c06260a06cbbc2f6431fe
 	   
 	   //for(int a = 0; a<list1.size(); a++){
 		//   list1.get(a).draw(window);
@@ -78,6 +98,7 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 		graphToBack.setColor(Color.BLUE);
 		graphToBack.drawString("StarFighter ", 15, 30 );
 		
+<<<<<<< HEAD
 
 		//if(ship.getDirection().equals("LEFT")){
 		Trail1 path1 = new Trail1(ship.getX()+80,ship.getY()+12);
@@ -143,6 +164,13 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 		
 		
 		
+=======
+		
+		Trail1 path1 = new Trail1(ship.getX()+80,ship.getY()+12);
+		path1.draw(window);
+		//list1.add(path1);
+		
+>>>>>>> 8c461e9d71e8db2d8f7c06260a06cbbc2f6431fe
 		
 		
 		if(ship.getDirection().equals("LEFT")){
@@ -160,16 +188,26 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 		if(ship.getDirection().equals("RIGHT")){
 			if(ship.getX()>1860-ship.getSpeed()){
 				window.setColor(Color.BLACK);
+<<<<<<< HEAD
 				window.fillRect(ship.getX()+82,ship.getY()+1,80,25);
 				ship.setX(-80);
 			}
 			else{
 				window.setColor(Color.BLACK);
 				window.fillRect(ship.getX()+82,ship.getY()+1,80,25);
+=======
+				window.fillRect(ship.getX(),ship.getY(),80,25);
+				ship.setX(0);
+			}
+			else{
+				window.setColor(Color.BLACK);
+				window.fillRect(ship.getX(),ship.getY(),80,25);
+>>>>>>> 8c461e9d71e8db2d8f7c06260a06cbbc2f6431fe
 			ship.move();
 			}
 		}
 		if(ship.getDirection().equals("UP")){
+<<<<<<< HEAD
 			if(ship.getY()<-12+ship.getSpeed()){
 				window.setColor(Color.BLACK);
 				window.fillRect(ship.getX()+68,ship.getY()-68,25,80);
@@ -178,10 +216,21 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 			else{
 				window.setColor(Color.BLACK);
 				window.fillRect(ship.getX()+68,ship.getY()-68,25,80);
+=======
+			if(ship.getY()<0+ship.getSpeed()){
+				window.setColor(Color.BLACK);
+				window.fillRect(ship.getX()+25,ship.getY(),25,80);
+				ship.setY(940);
+			}
+			else{
+				window.setColor(Color.BLACK);
+				window.fillRect(ship.getX()+25,ship.getY(),25,80);
+>>>>>>> 8c461e9d71e8db2d8f7c06260a06cbbc2f6431fe
 			ship.move();
 			}
 		}
 		if(ship.getDirection().equals("DOWN")){
+<<<<<<< HEAD
 			if(ship.getY()>952-ship.getSpeed()){
 				window.setColor(Color.BLACK);
 				window.fillRect(ship.getX()+69,ship.getY()+15,25,80);
@@ -190,6 +239,16 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 			else{
 				window.setColor(Color.BLACK);
 				window.fillRect(ship.getX()+69,ship.getY()+15,25,80);
+=======
+			if(ship.getY()>940-ship.getSpeed()){
+				window.setColor(Color.BLACK);
+				window.fillRect(ship.getX()+25,ship.getY(),25,80);
+				ship.setY(0);
+			}
+			else{
+				window.setColor(Color.BLACK);
+				window.fillRect(ship.getX()+25,ship.getY(),25,80);
+>>>>>>> 8c461e9d71e8db2d8f7c06260a06cbbc2f6431fe
 				ship.move();
 			}
 		}
@@ -197,21 +256,31 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 		
 		if(keys[0] == true)
 		{
+<<<<<<< HEAD
 			if(!ship.getDirection().equals("RIGHT"))
+=======
+>>>>>>> 8c461e9d71e8db2d8f7c06260a06cbbc2f6431fe
 			ship.turn("LEFT");
 		}
 		else if(keys[1] == true)
 		{
+<<<<<<< HEAD
 			if(!ship.getDirection().equals("LEFT"))
+=======
+>>>>>>> 8c461e9d71e8db2d8f7c06260a06cbbc2f6431fe
 			ship.turn("RIGHT");
 		}
 		else if(keys[2] == true)
 		{
+<<<<<<< HEAD
 			if(!ship.getDirection().equals("DOWN"))
+=======
+>>>>>>> 8c461e9d71e8db2d8f7c06260a06cbbc2f6431fe
 			ship.turn("UP");
 		}
 		else if(keys[3] == true)
 		{
+<<<<<<< HEAD
 			if(!ship.getDirection().equals("UP"))
 			ship.turn("DOWN");
 		}
@@ -239,6 +308,11 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 		}
 		
 		
+=======
+
+			ship.turn("DOWN");
+		}
+>>>>>>> 8c461e9d71e8db2d8f7c06260a06cbbc2f6431fe
 		/*if(keys[4] == true)
 		{
 			shot = new Nothing(ship.getX()+30,ship.getY(),1);
@@ -289,6 +363,7 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 		{
 			keys[3] = true;
 		}
+<<<<<<< HEAD
 		if (e.getKeyCode() == KeyEvent.VK_A)
 		{
 			keys[4] = true;
@@ -305,6 +380,12 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 		{
 			keys[7] = true;
 		}
+=======
+		if (e.getKeyCode() == KeyEvent.VK_SPACE)
+		{
+			keys[4] = true;
+		}
+>>>>>>> 8c461e9d71e8db2d8f7c06260a06cbbc2f6431fe
 		repaint();
 	}
 
@@ -326,6 +407,7 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 		{
 			keys[3] = false;
 		}
+<<<<<<< HEAD
 		if (e.getKeyCode() == KeyEvent.VK_A)
 		{
 			keys[4] = false;
@@ -342,6 +424,12 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 		{
 			keys[7] = false;
 		}
+=======
+		if (e.getKeyCode() == KeyEvent.VK_SPACE)
+		{
+			keys[4] = false;
+		}
+>>>>>>> 8c461e9d71e8db2d8f7c06260a06cbbc2f6431fe
 		repaint();
 	}
 
