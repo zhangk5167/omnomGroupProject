@@ -50,7 +50,7 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
    public void update(Graphics window)
    {
 	   paint(window);
-	   ship.draw(window);
+	   
 	   
 	   //for(int a = 0; a<list1.size(); a++){
 		//   list1.get(a).draw(window);
@@ -61,7 +61,7 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 	{
 		//set up the double buffering to make the game animation nice and smooth
 		Graphics2D twoDGraph = (Graphics2D)window;
-		
+		//path1.setX(ship.getX() - 30);
 		//take a snap shop of the current screen and same it as an image
 		//that is the exact same width and height as the current screen
 		
@@ -80,22 +80,25 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 		graphToBack.setColor(Color.BLUE);
 		graphToBack.drawString("StarFighter ", 15, 30 );
 		
+		window.setColor(Color.BLACK);
+		window.fillRect(ship.getX(),ship.getY(),80,80);
 		
-		Trail1 path1 = new Trail1(ship.getX()+80,ship.getY()+12);
-		path1.draw(window);
+		//Trail1 path1 = new Trail1(ship.getX()+80,ship.getY()+80);
+		//path1.draw(twoDGraph);
+		ship.draw(twoDGraph);
+		
 		//list1.add(path1);
 		
 		
 		
 		if(ship.getDirection().equals("LEFT")){
+			
 			if(ship.getX()<-80+ship.getSpeed()){
-				window.setColor(Color.BLACK);
-				window.fillRect(ship.getX(),ship.getY(),80,25);
-				ship.setX(1860);
+				
 			}
 			else{
-				window.setColor(Color.BLACK);
-				window.fillRect(ship.getX(),ship.getY(),80,25);
+//				window.setColor(Color.BLACK);
+//				window.fillRect(ship.getX(),ship.getY(),80,25);
 				ship.move();
 			}
 		}
@@ -106,20 +109,20 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 				ship.setX(0);
 			}
 			else{
-				window.setColor(Color.BLACK);
-				window.fillRect(ship.getX(),ship.getY(),80,25);
+//				window.setColor(Color.BLACK);
+//				window.fillRect(ship.getX(),ship.getY(),80,25);
 			ship.move();
 			}
 		}
 		if(ship.getDirection().equals("UP")){
 			if(ship.getY()<0+ship.getSpeed()){
-				window.setColor(Color.BLACK);
-				window.fillRect(ship.getX()+25,ship.getY(),25,80);
+//				window.setColor(Color.BLACK);
+//				window.fillRect(ship.getX()+25,ship.getY(),25,80);
 				ship.setY(940);
 			}
 			else{
-				window.setColor(Color.BLACK);
-				window.fillRect(ship.getX()+25,ship.getY(),25,80);
+//				window.setColor(Color.BLACK);
+//				window.fillRect(ship.getX()+25,ship.getY(),25,80);
 			ship.move();
 			}
 		}
@@ -130,8 +133,8 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 				ship.setY(0);
 			}
 			else{
-				window.setColor(Color.BLACK);
-				window.fillRect(ship.getX()+25,ship.getY(),25,80);
+//				window.setColor(Color.BLACK);
+//				window.fillRect(ship.getX()+25,ship.getY(),25,80);
 				ship.move();
 			}
 		}
@@ -139,11 +142,13 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 		
 		if(keys[0] == true)
 		{
+			window.setColor(Color.BLACK);
+			window.fillRect(ship.getX(),ship.getY()-50,80,150);
 			ship.turn("LEFT");
 		}
 		else if(keys[1] == true)
 		{
-			ship.turn("RIGHT");
+			ship.turn("RIGHT");	
 		}
 		else if(keys[2] == true)
 		{
@@ -151,7 +156,6 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 		}
 		else if(keys[3] == true)
 		{
-
 			ship.turn("DOWN");
 		}
 		/*if(keys[4] == true)
@@ -178,10 +182,7 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 		
 		//add code to move stuff
 
-
-		//add in collision detection
-
-
+		
 		//twoDGraph.drawImage(back, null, 0, 0);
 	}
 
