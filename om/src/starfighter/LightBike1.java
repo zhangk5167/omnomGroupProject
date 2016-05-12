@@ -245,7 +245,6 @@ public class LightBike1 extends LightBike
 		else{
 			x=getX();
 		}
-		
    	window.drawImage(image,x,getY(),w,h,null);
 >>>>>>> 8c461e9d71e8db2d8f7c06260a06cbbc2f6431fe
 	}
